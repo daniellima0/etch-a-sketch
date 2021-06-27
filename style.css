@@ -1,0 +1,112 @@
+body {
+    background-color: #aaa;
+    font-family: sans-serif;
+}
+#logo {
+    width: 18rem;
+    height: auto;
+    position: absolute;
+    top: 45rem;
+    left: 51.3rem;
+    z-index: 2;
+}
+
+#control1 {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: white;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    top: 44rem;
+    left: 44rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem black;
+}
+
+#control2 {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: white;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    top: 44rem;
+    right: 44rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+/* QUERY: 
+    -Why the border corners of the buttons are looking weird?
+    -Why the hover property is looking weird?
+*/
+
+#buttons {
+    width: max-content;
+    height: max-content;
+    display: flex;
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#resolution-button {
+    margin-right: 2rem;
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    position: relative;
+    background-color: rgb(220,20,60);
+    color: white;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    font-weight: bold;
+}
+
+#resolution-button:hover {
+    cursor: pointer;
+    width: 15.5rem;
+    height: 3rem;
+}
+
+#clear-button {
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    position: relative;
+    background-color: rgb(220,20,60);
+    color: white;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    font-weight: bold;
+}
+
+#clear-button:hover {
+    cursor: pointer;
+    width: 15.5rem;
+    height: 3rem;
+}
+
+#container{
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-top: 4rem solid rgb(220,20,60);
+    border-right: 4rem solid rgb(220,20,60);
+    border-bottom: 9rem solid rgb(220,20,60);
+    border-left: 4rem solid rgb(220,20,60);
+    
+    /* add inner border and add border radius to it*/
+    border-radius: 5% 5% 5% 5%;
+    box-shadow: 0.3rem 0.3rem 1rem black;
+}
