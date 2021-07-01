@@ -8,7 +8,9 @@
     <title>Etch A Sketch</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="shortcut icon" href="./images/etch-a-sketch.png"/>
+    <link rel="shortcut icon" href="./images/etch-a-sketch.png" />
+    <script src="https://kit.fontawesome.com/b6760ea8bc.js"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,23 +20,36 @@
             <button id='clear-button'>Clear Screen</button>
         </div>
         <div id="items">
-            <div id='control1'></div>
+            <div class='control'></div>
             <img id='logo' src="./images/logo.png" alt="Etch a Sketch logo">
-            <div id='control2'></div>
+            <div class='control'></div>
+        </div>
+        <div id="project-info">
+            <p>This project is part of <a href='https://www.theodinproject.com/'
+                    target="_blank"> The Odin Project</a> </p>
         </div>
     </main>
 
-    <footer>
-
+    <footer id="footer">
+        <div id="my-info">
+            <p id="my-info-title">Contact Me</p>
+            <a href="mailto:danielmlima@protonmail.com"
+                id="email">danielmlima@protonmail.com</a>
+            <div id="icons">
+                <a href="https://github.com/daniellima0" target="_blank"><i
+                        class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/danielmlima/"
+                    target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
     </footer>
-    
+
     <script src="./scripts/main.js"></script>
 </body>
 
 </html>
 
 <!-- TODO
-    - Add footer with my info in it
-    - Add TOP link closer to footer
-    - (TO COMMIT) Add favicon
+    - (TO COMMIT) Add footer with my info in it
+    - (TO COMMIT) Add TOP link closer to footer
 -->

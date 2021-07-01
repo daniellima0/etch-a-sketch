@@ -1,17 +1,21 @@
+:root{
+    --red: rgb(220, 20, 60);
+    --white: rgb(240, 240, 240);
+}
+
 body {
-    background-color: #aaa;
+    background-color: --white;
     font-family: sans-serif;
 }
 
 #buttons {
-    /* background-color: pink; */
     width: max-content;
     height: max-content;
     display: flex;
     column-gap: 2rem;
     align-items: center;
     position: relative;
-    top: 5rem;
+    top: 2.5rem;
     margin: auto;
 }
 
@@ -22,7 +26,7 @@ body {
     text-align: center;
     font-size: 1.4rem;
     position: relative;
-    background-color: rgb(220, 20, 60);
+    background-color: var(--red);
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -37,7 +41,7 @@ body {
     text-align: center;
     font-size: 1.4rem;
     position: relative;
-    background-color: rgb(220, 20, 60);
+    background-color: var(--red);
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -57,13 +61,12 @@ body {
     width: max-content;
     height: max-content;
     position: relative;
-    top: 2.8rem;
     margin: auto;
-    border-top: 4rem solid rgb(220, 20, 60);
-    border-right: 4rem solid rgb(220, 20, 60);
-    border-bottom: 9rem solid rgb(220, 20, 60);
-    border-left: 4rem solid rgb(220, 20, 60);
-    border-radius: 2.5rem;
+    border-top: 4rem solid var(--red);;
+    border-right: 4rem solid var(--red);;
+    border-bottom: 8rem solid var(--red);;
+    border-left: 4rem solid var(--red);;
+    border-radius: 2rem;
     box-shadow: 0.3rem 0.3rem 1rem black;
 }
 
@@ -72,42 +75,100 @@ body {
 #items {
     display: flex;
     align-items: center;
-    column-gap: 1.5rem;
+    column-gap: 1.6rem;
     width: max-content;
     height: max-content;
     position: relative;
-    top: 44rem;
+    top: 34.5rem;
     margin: auto;
     z-index: 2;
 }
 
 #logo {
-    width: 18rem;
+    width: 15rem;
     height: auto;
     position: relative;
 }
 
-#control1 {
-    width: 5.5rem;
-    height: 5.5rem;
+.control {
+    width: 5rem;
+    height: 5rem;
     background-color: white;
     border-radius: 50%;
     position: relative;
     box-shadow: 0.2rem 0.2rem 0.5rem black;
 }
 
-#control2 {
-    width: 5.5rem;
-    height: 5.5rem;
-    background-color: white;
-    border-radius: 50%;
-    position: relative;
-    box-shadow: 0.2rem 0.2rem 0.2rem black;
+#project-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 8.6rem;
+    right: 0.8rem;
+    color: var(--red);
+}
+
+#project-info a {
+    text-decoration: none;
+    color: var(--red);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#project-info a:hover {
+    color: gold;
+}
+
+#odin-title {
+    color: black;
+    font-weight: bold;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    background-color: var(--red);
+    width: 100%;
+    height: 8rem;
+}
+
+#my-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: max-content;
+    height: max-content;
+}
+
+#my-info-title {
+    font-weight: bold;
+}
+
+#icons {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.fa-github, .fa-linkedin, #email {
+    color: black;
+    text-decoration: none;
+}
+
+#email:hover, .fa-github:hover, .fa-linkedin:hover {
+    color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
 }
 
 /* TODO: 
-- (TO COMMIT) Fix border corners of the buttons
-- (TO COMMIT) Fix buttons hover behaviour
-- Add inner border and add border radius to container
+- Fix footer when screen is resized
 - Add @media
 */

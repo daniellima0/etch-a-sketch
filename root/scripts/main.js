@@ -5,7 +5,7 @@ function getRandomNumber(num) {
 }
 
 function createNewGrid(num) {
-    const maxSpace = 30;
+    const maxSpace = 24;
 
     const display = document.createElement('div');
     display.id = 'display';
@@ -75,10 +75,3 @@ clearButton.addEventListener('click', () => {
     createNewGrid(actualResolution);
     addColorBehavior();
 });
-
-/*
-// TODO:
-// (TO COMMIT) Make colors become 10% darker after each pass
-// (TO COMMIT) Make divs have a individual behavior
-// Fix buttons bug
-*/
