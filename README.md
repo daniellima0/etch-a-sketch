@@ -3,7 +3,7 @@
 ## Introduction
 
 This is a Web version of the old mechanical drawing toy Etch a Sketch,  
-built with plain HTML, CSS and Javascript.
+built with plain HTML, CSS and Javascript. This project is part of The Odin project.
 
 ## Visualize WebPage
 
