@@ -1,3 +1,6 @@
+// não trata divs individualmente
+// rgb(255,255,255)
+
 "use strict"
 
 // get random naumber between 0 and 255 inclusively
@@ -65,4 +68,3 @@ clearButton.addEventListener('click', () => {
     oldGrid.remove();
     createNewGrid(actualResolution);
 });
-
